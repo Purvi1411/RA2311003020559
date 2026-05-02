@@ -1,0 +1,10 @@
+const ACCESS_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJwcDE4MjBAc3JtaXN0LmVkdS5pbiIsImV4cCI6MTc3NzcwMDE2OSwiaWF0IjoxNzc3Njk5MjY5LCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiZjUyZWY3ZTgtY2RjOC00Mjg0LTg1YmEtNTM2N2VlOWVjOGRhIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoicHVydmkgcGFsIiwic3ViIjoiMTcwYzQ4YzctODM0OC00MGJmLWJmNWUtM2I3ZTQyYTQyM2EwIn0sImVtYWlsIjoicHAxODIwQHNybWlzdC5lZHUuaW4iLCJuYW1lIjoicHVydmkgcGFsIiwicm9sbE5vIjoicmEyMzExMDAzMDIwNTU5IiwiYWNjZXNzQ29kZSI6IlFrYnB4SCIsImNsaWVudElEIjoiMTcwYzQ4YzctODM0OC00MGJmLWJmNWUtM2I3ZTQyYTQyM2EwIiwiY2xpZW50U2VjcmV0Ijoic25kRWhKaEtoUlNaeHJtcSJ9.Bnk3i93BPigF1qHZ22b-j8LInoBbX-qmUemjf5lM8O8';
+const morgan = require('morgan');
+
+const setupLogging = (app) => {
+    // Standard logging for backend development
+    app.use(morgan('combined')); 
+    console.log("Logging middleware for REG_NO initialized.");
+};
+
+module.exports = setupLogging;
